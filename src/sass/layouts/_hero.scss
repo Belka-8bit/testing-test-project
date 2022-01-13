@@ -108,17 +108,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -49%);
-  animation: hero__image 1500ms linear;
+  animation: hero__image 750ms linear;
 }
 
 @keyframes hero__image {
   0% {
-    transform: translateX(-49%);
+    transform: translateX(-46%);
   }
 }
 
 .girl-ice-image {
-  animation: girl-ice-image 1500ms linear;
+  animation: girl-ice-image 750ms linear;
 }
 
 @keyframes girl-ice-image {
@@ -218,13 +218,6 @@
   top: 50%;
   right: 0;
   transform: translate(-34px, -80%);
-  animation: hero__lables 1500ms linear;
-}
-
-@keyframes hero__lables {
-  0% {
-    transform: translateY(-50%);
-  }
 }
 
 .label__items {
