@@ -15,7 +15,7 @@
 }
 
 .back-to-top {
-  background-color: $social-passive-color;
+  background-color: $main-accent-color;
   width: 50px;
   text-align: center;
   border-radius: 4px;
@@ -40,7 +40,7 @@
   }
   &:hover,
   &:focus {
-    background-color: $accent-color;
+    background-color: $button-accent-hover-color;
   }
   &.show {
     opacity: 1;
