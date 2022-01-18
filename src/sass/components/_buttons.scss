@@ -13,3 +13,42 @@
   border: none;
   border-radius: 22px;
 }
+
+.back-to-top {
+  background-color: $social-passive-color;
+  width: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color $duration $function, opacity $duration $function,
+    visibility $duration $function;
+  opacity: 0;
+  visibility: hidden;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::after {
+    content: '\f077';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media screen and (max-width: 1199px) {
+    bottom: 20px;
+    right: 20px;
+  }
+}
