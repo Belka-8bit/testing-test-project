@@ -52,7 +52,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 280px;
+    width: 100vw;
     height: 100vh;
     padding-top: 60px;
     padding-left: 20px;
@@ -104,9 +104,6 @@
 
 .navigation {
   width: 100%;
-
-  background-image: url('../src/images/bg_border_white2.png') no-repeat center top;
-  height: 182px;
 }
 
 .navigation__items {

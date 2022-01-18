@@ -1,8 +1,7 @@
 .hero {
   overflow: hidden;
   min-height: 502px;
-  background-color: $hero-primary-background-color;
-
+  background-color: rgba(255, 184, 202, 0.8);
   @media screen and (min-width: 768px) {
     min-height: 399px;
     padding-bottom: 28px;
@@ -268,4 +267,9 @@
     font-size: 14px;
     line-height: 1.29;
   }
+}
+
+.body-background {
+  background: url(../../src/images/parallax2.png);
+  background-size: contain;
 }
