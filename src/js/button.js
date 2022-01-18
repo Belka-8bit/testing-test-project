@@ -1,7 +1,7 @@
 var btn = $('.back-to-top');
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 10) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
@@ -10,5 +10,5 @@ $(window).scroll(function () {
 
 btn.on('click', function (e) {
   e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '100');
+  $('html, body').animate({ scrollTop: 0 }, '10');
 });
