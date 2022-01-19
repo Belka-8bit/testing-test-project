@@ -60,15 +60,18 @@
       </li>
     </ul>
   </div>
-  <h3>Расчет стоимости линолеума</h3>
-  <select id="cvet">
-    <option value="serii">Серый</option>
-    <option value="geltii">Желтый</option>
-    <option value="goluboi">Голубой</option>
-  </select>
-  <input type="text" id="shirina" value="" placeholder="укажите ширину помещения" />
-  <input type="text" id="dlina" value="" placeholder="укажите длину помещения" />
-  <button onclick="raschitat();">Рассчитать стоимость</button>
-  <div id="ploschad"></div>
-  <div id="stoimost"></div>
 </section>
+<form class="variants" action="/cart">
+  <div class="price prc-new"><span>23,00</span> Р/</div>
+  <select id="select-product" name="variant">
+    <option value="56" data-price="23,00" data-compare-price="0,00 руб">грамм</option>
+    <option value="61" data-price="230,00" data-compare-price="0,00 руб">килограмм</option>
+  </select>
+  <div class="product_count_label">×</div>
+  <div class="product_count_input">
+    <input class="amount" type="text" name="amount" value="1" />
+    <span class="plus" data-change="+1"></span>
+    <span class="minus" data-change="-1"></span>
+  </div>
+  <div class="total_price">23,00</div>
+</form>

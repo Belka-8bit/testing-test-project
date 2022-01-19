@@ -273,3 +273,46 @@
   background: url(../../src/images/parallax2.png);
   background-size: contain;
 }
+
+.plus {
+  width: 0;
+  height: 0;
+  border-width: 0 7px 9px 7px;
+  border-color: transparent transparent #c2c2c2 transparent;
+  border-style: solid;
+  display: inline-block;
+  top: 0px;
+  right: 11px;
+  position: absolute;
+}
+
+.minus {
+  width: 0;
+  height: 0;
+  border-width: 9px 7px 0 7px;
+  border-color: #c2c2c2 transparent transparent transparent;
+  border-style: solid;
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  right: 11px;
+}
+
+.plus:hover,
+.minus:hover {
+  cursor: pointer;
+}
+
+.product .price,
+.products .price {
+  color: #6d2a25;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: auto 0;
+}
+
+.product_count_input {
+  position: relative;
+  width: 200px;
+}

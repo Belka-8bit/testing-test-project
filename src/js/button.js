@@ -1,14 +1,24 @@
-var btn = $('.back-to-top');
+var scrollToTopBtn = document.querySelector('.back-to-top');
+var rootElement = document.documentElement;
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 10) {
-    btn.addClass('show');
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.8) {
+    // Show button
+    scrollToTopBtn.classList.add('show');
   } else {
-    btn.removeClass('show');
+    // Hide button
+    scrollToTopBtn.classList.remove('show');
   }
-});
+}
 
-btn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({ scrollTop: 0 }, '10');
-});
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+scrollToTopBtn.addEventListener('click', scrollToTop);
+document.addEventListener('scroll', handleScroll);
